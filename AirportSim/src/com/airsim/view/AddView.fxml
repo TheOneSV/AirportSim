@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="148.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airsim.view.AddViewController">
+   <children>
+      <Label layoutX="220.0" layoutY="16.0" text="Name:" />
+      <TextField fx:id="nameField" layoutX="270.0" layoutY="12.0" prefHeight="25.0" prefWidth="103.0" />
+      <TextField fx:id="speedField" layoutX="270.0" layoutY="42.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="220.0" layoutY="46.0" text="Speed:" />
+      <Label layoutX="220.0" layoutY="76.0" text="Max km:" />
+      <TextField fx:id="maxKMField" layoutX="270.0" layoutY="72.0" prefHeight="25.0" prefWidth="103.0" />
+      <Button layoutX="220.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#handleOk" prefHeight="25.0" prefWidth="154.0" text="ADD" />
+      <RadioButton fx:id="freighterRadio" layoutX="17.0" layoutY="46.0" mnemonicParsing="false" text="Freighter" />
+      <Label layoutX="14.0" layoutY="16.0" text="Type:" />
+      <ImageView fx:id="airplaneView" fitHeight="51.0" fitWidth="85.0" layoutX="105.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../airliner.png" />
+         </image></ImageView>
+      <RadioButton fx:id="airlinerRadio" layoutX="17.0" layoutY="76.0" mnemonicParsing="false" selected="true" text="Airliner" />
+      <Label fx:id="typeLabel" layoutX="17.0" layoutY="115.0" text="Passengers:" />
+      <TextField fx:id="typeField" layoutX="93.0" layoutY="111.0" onMouseClicked="#handleTypeFieldClick" prefHeight="25.0" prefWidth="112.0" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.4" />
+   </effect>
+</AnchorPane>

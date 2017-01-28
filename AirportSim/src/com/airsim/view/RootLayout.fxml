@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airsim.view.RootLayoutController">
+   <bottom>
+      <AnchorPane prefHeight="32.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="secondsLabel" layoutX="14.0" layoutY="8.0" text="Time">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="1043.0" layoutY="6.0" text="Airplane crashes:" />
+            <Label fx:id="crashesLabel" layoutX="1140.0" layoutY="6.0" text="0" />
+         </children></AnchorPane>
+   </bottom>
+   <left>
+      <TableView fx:id="airportTable" onMouseClicked="#showAirportView" prefHeight="543.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Airfield" />
+          <TableColumn fx:id="emptyPlacesColumn" prefWidth="74.0" text="Empty Places" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </left>
+   <right>
+      <TableView fx:id="airplaneTable" onMouseClicked="#showAirplaneView" prefHeight="543.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameAriplaneColumn" prefWidth="75.0" text="Airplane" />
+          <TableColumn fx:id="AirplaneStateColumn" prefWidth="75.0" text="State" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </right>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#showAbout">
+               <graphic>
+                  <Label contentDisplay="RIGHT" onMouseClicked="#showAbout" text="About" />
+               </graphic></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Group fx:id="groupDraw" stylesheets="@GroopLayout.css" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

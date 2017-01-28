@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="475.0" layoutX="63.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="8.0" layoutY="-12.0" text="SimPlane" textFill="#1c0e86">
+         <font>
+            <Font name="Pristina" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="57.0" text="Version 1.0.0.1" />
+      <Label layoutX="435.0" layoutY="10.0" text="Copyright © 2015 by" />
+      <Label layoutX="437.0" layoutY="40.0" text="Йонко Динев">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="437.0" layoutY="60.0" text="Александър Минчев">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="437.0" layoutY="80.0" text="Георги Георгиев">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="437.0" layoutY="100.0" text="Запрян Запрянов">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="484.0" layoutY="378.0" text="All rights reserved.">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
